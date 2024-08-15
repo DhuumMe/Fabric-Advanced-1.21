@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "advanced",
+	"version": "${version}",
+	"name": "Advanced",
+	"description": "Minecraft: Advanced by DhuumMe",
+	"authors": [
+		"DhuumMe"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/advanced/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.dhuumme.advanced.Advanced"
+		],
+		"fabric-datagen": [
+			"net.dhuumme.advanced.AdvancedDataGenerator"
+		],
+		"client": [
+			"net.dhuumme.advanced.AdvancedClient"
+		]
+	},
+	"mixins": [
+		"advanced.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

@@ -1,5 +1,6 @@
 package net.dhuumme.advanced;
 
+import net.dhuumme.advanced.weather.ModWeather;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -17,6 +18,7 @@ public class Advanced implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+		ModWeather.init();
 
 		LOGGER.info("Hello Fabric world!");
 	}
